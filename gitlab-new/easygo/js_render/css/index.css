@@ -1,0 +1,48 @@
+﻿body{padding:0;margin:0;}
+
+.query-form-container{
+    position:absolute;
+    top: 0px;
+    padding:10px;
+    z-index:1;
+}
+
+#timeSelect{display:none;margin-top:13px;max-width:640px;z-index:10;background:#fff;padding:10px;border-radius:5px;box-shadow: 0px 0px 5px #CCCCCC;border:1px solid #ccc;}
+.btn-row{padding-bottom:10px;}
+.btn-row .layui-btn{width:80px;}
+
+.query-mode{
+    margin-left:10px;
+    display: inline-block;
+    width: 40px;
+    height: 34px;
+    text-align: center;
+    line-height: 38px;
+    font-size: 22px;
+    background: #fff;
+    border-radius: 2px;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+.query-mode:hover{cursor:pointer;}
+
+.query-mode-label{
+    margin-top:8px;
+    display:inline-block;
+    font-size:16px;
+}
+
+.bmap{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    overflow: hidden;
+    margin: 0;
+    font-family: "微软雅黑";
+}
+
+/*隐藏百度地图的版权信息*/
+.BMap_cpyCtrl{display:none;}
+.anchorBL a img{display:none;}

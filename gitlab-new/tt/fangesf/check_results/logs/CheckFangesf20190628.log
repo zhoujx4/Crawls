@@ -1,0 +1,522 @@
+[2019-06-28 16:55:12] {'errors': 6, 'start_list_request': 256, 'start_detailed_request': 14964, 'start_amap_json_request': 14953}
+[2019-06-28 16:55:12] ['https://gz.esf.fang.com/house-a084-b014468', 'https://gz.esf.fang.com/house-a084-b022787', 'https://gz.esf.fang.com/house-a084-b017043', 'https://gz.esf.fang.com/house-a084-b014869', 'https://gz.esf.fang.com/house-a084-b019624', 'https://gz.esf.fang.com/house-a084-b017045', 'https://gz.esf.fang.com/house-a084-b019625', 'https://gz.esf.fang.com/house-a084-b014869/g21', 'https://gz.esf.fang.com/house-a084-b014869/g22', 'https://gz.esf.fang.com/house-a084-b014869/g23', 'https://gz.esf.fang.com/house-a084-b014869/g24', 'https://gz.esf.fang.com/house-a084-b014869/g25', 'https://gz.esf.fang.com/house-a084-b014869/g299']
+[2019-06-28 16:55:12] {'https://gz.esf.fang.com/house-a084-b014468': 13, 'https://gz.esf.fang.com/house-a084-b022787': 3, 'https://gz.esf.fang.com/house-a084-b017043': 39, 'https://gz.esf.fang.com/house-a084-b014869': 0, 'https://gz.esf.fang.com/house-a084-b019624': 24, 'https://gz.esf.fang.com/house-a084-b017045': 31, 'https://gz.esf.fang.com/house-a084-b019625': 26, 'https://gz.esf.fang.com/house-a084-b014869/g21': 3, 'https://gz.esf.fang.com/house-a084-b014869/g22': 27, 'https://gz.esf.fang.com/house-a084-b014869/g23': 63, 'https://gz.esf.fang.com/house-a084-b014869/g24': 13, 'https://gz.esf.fang.com/house-a084-b014869/g25': 1, 'https://gz.esf.fang.com/house-a084-b014869/g299': 0}
+[2019-06-28 16:55:12] Error: https://gz.esf.fang.com/house-a084
+[2019-06-28 16:55:12] Error: https://gz.esf.fang.com/house-a080
+[2019-06-28 16:55:12] Error: https://gz.esf.fang.com/house-a080-b015979
+[2019-06-28 16:55:12] Error: https://gz.esf.fang.com/house-a080-b018651
+[2019-06-28 16:55:12] Error: https://gz.esf.fang.com/house-a080-b019628
+[2019-06-28 16:55:13] Error: https://gz.esf.fang.com/house-a080-b019630
+[2019-06-28 16:55:13] Error: https://gz.esf.fang.com/house-a080-b019629
+[2019-06-28 16:55:13] Error: https://gz.esf.fang.com/house-a080-b013952
+[2019-06-28 16:55:13] Error: https://gz.esf.fang.com/house-a080-b013951
+[2019-06-28 16:55:13] Error: https://gz.esf.fang.com/house-a080-b022724
+[2019-06-28 16:55:13] Error: https://gz.esf.fang.com/house-a080-b015154
+[2019-06-28 16:55:13] Error: https://gz.esf.fang.com/house-a080-b015152
+[2019-06-28 16:55:13] Error: https://gz.esf.fang.com/house-a080-b01235
+[2019-06-28 16:55:13] Error: https://gz.esf.fang.com/house-a080-b018646
+[2019-06-28 16:55:13] total wrong list urls: 14
+[2019-06-28 16:55:13] left over list page without response == []
+[2019-06-28 16:55:13] There are still some Page2 or more list page have no response: 
+[2019-06-28 16:55:13] {'https://gz.esf.fang.com/house-a084-b014468': 0, 'https://gz.esf.fang.com/house-a084-b022787': 0, 'https://gz.esf.fang.com/house-a084-b017043': 0, 'https://gz.esf.fang.com/house-a084-b014869': 0, 'https://gz.esf.fang.com/house-a084-b019624': 0, 'https://gz.esf.fang.com/house-a084-b017045': 0, 'https://gz.esf.fang.com/house-a084-b019625': 0, 'https://gz.esf.fang.com/house-a084-b014869/g21': 0, 'https://gz.esf.fang.com/house-a084-b014869/g22': 0, 'https://gz.esf.fang.com/house-a084-b014869/g23': 0, 'https://gz.esf.fang.com/house-a084-b014869/g24': 0, 'https://gz.esf.fang.com/house-a084-b014869/g25': 0, 'https://gz.esf.fang.com/house-a084-b014869/g299': 0}
+[2019-06-28 16:55:13] This has 59 or more new records. file name = gz_a084_b014468_index10_20190626.html; record number == 60
+[2019-06-28 16:55:13] gz_a084_b014468_index10_20190626.html : 
+[2019-06-28 16:55:13] This has less than 59 new records. file name = gz_a084_b014468_index11_20190626.html; new record number / total record number = 57/60
+[2019-06-28 16:55:13] gz_a084_b014468_index11_20190626.html : 
+[2019-06-28 16:55:13] This has less than 59 new records. file name = gz_a084_b014468_index12_20190626.html; new record number / total record number = 50/60
+[2019-06-28 16:55:13] gz_a084_b014468_index12_20190626.html : 
+[2019-06-28 16:55:13] This has less than 59 new records. file name = gz_a084_b014468_index13_20190626.html; new record number / total record number = 46/60
+[2019-06-28 16:55:13] gz_a084_b014468_index13_20190626.html : 
+[2019-06-28 16:55:13] This has less than 59 new records. file name = gz_a084_b014468_index14_20190626.html; new record number / total record number = 28/44
+[2019-06-28 16:55:13] gz_a084_b014468_index14_20190626.html : 
+[2019-06-28 16:55:13] This has less than 59 new records. file name = gz_a084_b014468_index1_20190626.html; new record number / total record number = 49/64
+[2019-06-28 16:55:13] gz_a084_b014468_index1_20190626.html : 
+[2019-06-28 16:55:13] This has less than 59 new records. file name = gz_a084_b014468_index2_20190626.html; new record number / total record number = 44/60
+[2019-06-28 16:55:13] gz_a084_b014468_index2_20190626.html : 
+[2019-06-28 16:55:13] This has less than 59 new records. file name = gz_a084_b014468_index3_20190626.html; new record number / total record number = 41/60
+[2019-06-28 16:55:13] gz_a084_b014468_index3_20190626.html : 
+[2019-06-28 16:55:13] This has less than 59 new records. file name = gz_a084_b014468_index4_20190626.html; new record number / total record number = 34/60
+[2019-06-28 16:55:14] gz_a084_b014468_index4_20190626.html : 
+[2019-06-28 16:55:14] This has less than 59 new records. file name = gz_a084_b014468_index5_20190626.html; new record number / total record number = 34/60
+[2019-06-28 16:55:14] gz_a084_b014468_index5_20190626.html : 
+[2019-06-28 16:55:14] This has less than 59 new records. file name = gz_a084_b014468_index6_20190626.html; new record number / total record number = 28/60
+[2019-06-28 16:55:14] gz_a084_b014468_index6_20190626.html : 
+[2019-06-28 16:55:14] This has less than 59 new records. file name = gz_a084_b014468_index7_20190626.html; new record number / total record number = 26/60
+[2019-06-28 16:55:14] gz_a084_b014468_index7_20190626.html : 
+[2019-06-28 16:55:14] This has less than 59 new records. file name = gz_a084_b014468_index8_20190626.html; new record number / total record number = 27/60
+[2019-06-28 16:55:14] gz_a084_b014468_index8_20190626.html : 
+[2019-06-28 16:55:14] This has less than 59 new records. file name = gz_a084_b014468_index9_20190626.html; new record number / total record number = 25/60
+[2019-06-28 16:55:14] gz_a084_b014468_index9_20190626.html : 
+[2019-06-28 16:55:14] This has 59 or more new records. file name = gz_a084_b014869_index1-i32_20190626.html; record number == 60
+[2019-06-28 16:55:14] gz_a084_b014869_index1-i32_20190626.html : 
+[2019-06-28 16:55:14] This has 59 or more new records. file name = gz_a084_b014869_index1-i33_20190626.html; record number == 60
+[2019-06-28 16:55:14] gz_a084_b014869_index1-i33_20190626.html : 
+[2019-06-28 16:55:14] This has less than 59 new records. file name = gz_a084_b014869_index1-i34_20190626.html; new record number / total record number = 17/31
+[2019-06-28 16:55:14] gz_a084_b014869_index1-i34_20190626.html : 
+[2019-06-28 16:55:14] This has less than 59 new records. file name = gz_a084_b014869_index1_20190626.html; new record number / total record number = 28/61
+[2019-06-28 16:55:14] gz_a084_b014869_index1_20190626.html : 
+[2019-06-28 16:55:14] This has 59 or more new records. file name = gz_a084_b014869_index2-i310_20190626.html; record number == 60
+[2019-06-28 16:55:14] gz_a084_b014869_index2-i310_20190626.html : 
+[2019-06-28 16:55:14] This has less than 59 new records. file name = gz_a084_b014869_index2-i311_20190626.html; new record number / total record number = 57/60
+[2019-06-28 16:55:14] gz_a084_b014869_index2-i311_20190626.html : 
+[2019-06-28 16:55:15] This has less than 59 new records. file name = gz_a084_b014869_index2-i312_20190626.html; new record number / total record number = 57/60
+[2019-06-28 16:55:15] gz_a084_b014869_index2-i312_20190626.html : 
+[2019-06-28 16:55:15] This has less than 59 new records. file name = gz_a084_b014869_index2-i313_20190626.html; new record number / total record number = 57/60
+[2019-06-28 16:55:15] gz_a084_b014869_index2-i313_20190626.html : 
+[2019-06-28 16:55:15] This has less than 59 new records. file name = gz_a084_b014869_index2-i314_20190626.html; new record number / total record number = 52/60
+[2019-06-28 16:55:15] gz_a084_b014869_index2-i314_20190626.html : 
+[2019-06-28 16:55:15] This has less than 59 new records. file name = gz_a084_b014869_index2-i315_20190626.html; new record number / total record number = 53/60
+[2019-06-28 16:55:15] gz_a084_b014869_index2-i315_20190626.html : 
+[2019-06-28 16:55:15] This has less than 59 new records. file name = gz_a084_b014869_index2-i316_20190626.html; new record number / total record number = 44/60
+[2019-06-28 16:55:15] gz_a084_b014869_index2-i316_20190626.html : 
+[2019-06-28 16:55:15] This has less than 59 new records. file name = gz_a084_b014869_index2-i317_20190626.html; new record number / total record number = 46/60
+[2019-06-28 16:55:15] gz_a084_b014869_index2-i317_20190626.html : 
+[2019-06-28 16:55:15] This has less than 59 new records. file name = gz_a084_b014869_index2-i318_20190626.html; new record number / total record number = 49/60
+[2019-06-28 16:55:15] gz_a084_b014869_index2-i318_20190626.html : 
+[2019-06-28 16:55:15] This has less than 59 new records. file name = gz_a084_b014869_index2-i319_20190626.html; new record number / total record number = 47/60
+[2019-06-28 16:55:15] gz_a084_b014869_index2-i319_20190626.html : 
+[2019-06-28 16:55:15] This has less than 59 new records. file name = gz_a084_b014869_index2-i320_20190626.html; new record number / total record number = 42/60
+[2019-06-28 16:55:15] gz_a084_b014869_index2-i320_20190626.html : 
+[2019-06-28 16:55:15] This has less than 59 new records. file name = gz_a084_b014869_index2-i321_20190626.html; new record number / total record number = 35/60
+[2019-06-28 16:55:15] gz_a084_b014869_index2-i321_20190626.html : 
+[2019-06-28 16:55:15] This has less than 59 new records. file name = gz_a084_b014869_index2-i322_20190626.html; new record number / total record number = 41/60
+[2019-06-28 16:55:15] gz_a084_b014869_index2-i322_20190626.html : 
+[2019-06-28 16:55:15] This has less than 59 new records. file name = gz_a084_b014869_index2-i323_20190626.html; new record number / total record number = 39/60
+[2019-06-28 16:55:15] gz_a084_b014869_index2-i323_20190626.html : 
+[2019-06-28 16:55:15] This has less than 59 new records. file name = gz_a084_b014869_index2-i324_20190626.html; new record number / total record number = 33/60
+[2019-06-28 16:55:15] gz_a084_b014869_index2-i324_20190626.html : 
+[2019-06-28 16:55:16] This has less than 59 new records. file name = gz_a084_b014869_index2-i325_20190626.html; new record number / total record number = 36/60
+[2019-06-28 16:55:16] gz_a084_b014869_index2-i325_20190626.html : 
+[2019-06-28 16:55:16] This has less than 59 new records. file name = gz_a084_b014869_index2-i326_20190626.html; new record number / total record number = 33/60
+[2019-06-28 16:55:16] gz_a084_b014869_index2-i326_20190626.html : 
+[2019-06-28 16:55:16] This has less than 59 new records. file name = gz_a084_b014869_index2-i327_20190626.html; new record number / total record number = 38/60
+[2019-06-28 16:55:16] gz_a084_b014869_index2-i327_20190626.html : 
+[2019-06-28 16:55:16] This has less than 59 new records. file name = gz_a084_b014869_index2-i328_20190626.html; new record number / total record number = 6/6
+[2019-06-28 16:55:16] gz_a084_b014869_index2-i328_20190626.html : 
+[2019-06-28 16:55:16] This has less than 59 new records. file name = gz_a084_b014869_index2-i32_20190626.html; new record number / total record number = 35/60
+[2019-06-28 16:55:16] gz_a084_b014869_index2-i32_20190626.html : 
+[2019-06-28 16:55:16] This has less than 59 new records. file name = gz_a084_b014869_index2-i33_20190626.html; new record number / total record number = 30/60
+[2019-06-28 16:55:16] gz_a084_b014869_index2-i33_20190626.html : 
+[2019-06-28 16:55:16] This has less than 59 new records. file name = gz_a084_b014869_index2-i34_20190626.html; new record number / total record number = 22/60
+[2019-06-28 16:55:16] gz_a084_b014869_index2-i34_20190626.html : 
+[2019-06-28 16:55:16] This has less than 59 new records. file name = gz_a084_b014869_index2-i35_20190626.html; new record number / total record number = 30/60
+[2019-06-28 16:55:16] gz_a084_b014869_index2-i35_20190626.html : 
+[2019-06-28 16:55:16] This has less than 59 new records. file name = gz_a084_b014869_index2-i36_20190626.html; new record number / total record number = 29/60
+[2019-06-28 16:55:16] gz_a084_b014869_index2-i36_20190626.html : 
+[2019-06-28 16:55:16] This has less than 59 new records. file name = gz_a084_b014869_index2-i37_20190626.html; new record number / total record number = 28/60
+[2019-06-28 16:55:16] gz_a084_b014869_index2-i37_20190626.html : 
+[2019-06-28 16:55:17] This has less than 59 new records. file name = gz_a084_b014869_index2-i38_20190626.html; new record number / total record number = 26/60
+[2019-06-28 16:55:17] gz_a084_b014869_index2-i38_20190626.html : 
+[2019-06-28 16:55:17] This has less than 59 new records. file name = gz_a084_b014869_index2-i39_20190626.html; new record number / total record number = 22/60
+[2019-06-28 16:55:17] gz_a084_b014869_index2-i39_20190626.html : 
+[2019-06-28 16:55:17] This has 59 or more new records. file name = gz_a084_b014869_index3-i310_20190626.html; record number == 60
+[2019-06-28 16:55:17] gz_a084_b014869_index3-i310_20190626.html : 
+[2019-06-28 16:55:17] This has 59 or more new records. file name = gz_a084_b014869_index3-i311_20190626.html; record number == 60
+[2019-06-28 16:55:17] gz_a084_b014869_index3-i311_20190626.html : 
+[2019-06-28 16:55:17] This has 59 or more new records. file name = gz_a084_b014869_index3-i312_20190626.html; record number == 60
+[2019-06-28 16:55:17] gz_a084_b014869_index3-i312_20190626.html : 
+[2019-06-28 16:55:17] This has less than 59 new records. file name = gz_a084_b014869_index3-i313_20190626.html; new record number / total record number = 58/60
+[2019-06-28 16:55:17] gz_a084_b014869_index3-i313_20190626.html : 
+[2019-06-28 16:55:17] This has less than 59 new records. file name = gz_a084_b014869_index3-i314_20190626.html; new record number / total record number = 54/60
+[2019-06-28 16:55:17] gz_a084_b014869_index3-i314_20190626.html : 
+[2019-06-28 16:55:17] This has less than 59 new records. file name = gz_a084_b014869_index3-i315_20190626.html; new record number / total record number = 57/60
+[2019-06-28 16:55:17] gz_a084_b014869_index3-i315_20190626.html : 
+[2019-06-28 16:55:17] This has less than 59 new records. file name = gz_a084_b014869_index3-i316_20190626.html; new record number / total record number = 53/60
+[2019-06-28 16:55:17] gz_a084_b014869_index3-i316_20190626.html : 
+[2019-06-28 16:55:18] This has less than 59 new records. file name = gz_a084_b014869_index3-i317_20190626.html; new record number / total record number = 58/60
+[2019-06-28 16:55:18] gz_a084_b014869_index3-i317_20190626.html : 
+[2019-06-28 16:55:18] This has less than 59 new records. file name = gz_a084_b014869_index3-i318_20190626.html; new record number / total record number = 50/60
+[2019-06-28 16:55:18] gz_a084_b014869_index3-i318_20190626.html : 
+[2019-06-28 16:55:18] This has less than 59 new records. file name = gz_a084_b014869_index3-i319_20190626.html; new record number / total record number = 50/60
+[2019-06-28 16:55:18] gz_a084_b014869_index3-i319_20190626.html : 
+[2019-06-28 16:55:18] This has less than 59 new records. file name = gz_a084_b014869_index3-i320_20190626.html; new record number / total record number = 50/60
+[2019-06-28 16:55:18] gz_a084_b014869_index3-i320_20190626.html : 
+[2019-06-28 16:55:18] This has less than 59 new records. file name = gz_a084_b014869_index3-i321_20190626.html; new record number / total record number = 50/60
+[2019-06-28 16:55:18] gz_a084_b014869_index3-i321_20190626.html : 
+[2019-06-28 16:55:18] This has less than 59 new records. file name = gz_a084_b014869_index3-i322_20190626.html; new record number / total record number = 49/60
+[2019-06-28 16:55:18] gz_a084_b014869_index3-i322_20190626.html : 
+[2019-06-28 16:55:18] This has less than 59 new records. file name = gz_a084_b014869_index3-i323_20190626.html; new record number / total record number = 49/60
+[2019-06-28 16:55:18] gz_a084_b014869_index3-i323_20190626.html : 
+[2019-06-28 16:55:18] This has less than 59 new records. file name = gz_a084_b014869_index3-i324_20190626.html; new record number / total record number = 43/60
+[2019-06-28 16:55:18] gz_a084_b014869_index3-i324_20190626.html : 
+[2019-06-28 16:55:18] This has less than 59 new records. file name = gz_a084_b014869_index3-i325_20190626.html; new record number / total record number = 48/60
+[2019-06-28 16:55:18] gz_a084_b014869_index3-i325_20190626.html : 
+[2019-06-28 16:55:18] This has less than 59 new records. file name = gz_a084_b014869_index3-i326_20190626.html; new record number / total record number = 45/60
+[2019-06-28 16:55:18] gz_a084_b014869_index3-i326_20190626.html : 
+[2019-06-28 16:55:18] This has less than 59 new records. file name = gz_a084_b014869_index3-i327_20190626.html; new record number / total record number = 40/60
+[2019-06-28 16:55:18] gz_a084_b014869_index3-i327_20190626.html : 
+[2019-06-28 16:55:18] This has less than 59 new records. file name = gz_a084_b014869_index3-i328_20190626.html; new record number / total record number = 48/60
+[2019-06-28 16:55:18] gz_a084_b014869_index3-i328_20190626.html : 
+[2019-06-28 16:55:18] This has less than 59 new records. file name = gz_a084_b014869_index3-i329_20190626.html; new record number / total record number = 43/60
+[2019-06-28 16:55:19] gz_a084_b014869_index3-i329_20190626.html : 
+[2019-06-28 16:55:19] This has less than 59 new records. file name = gz_a084_b014869_index3-i32_20190626.html; new record number / total record number = 47/60
+[2019-06-28 16:55:19] gz_a084_b014869_index3-i32_20190626.html : 
+[2019-06-28 16:55:19] This has less than 59 new records. file name = gz_a084_b014869_index3-i330_20190626.html; new record number / total record number = 43/60
+[2019-06-28 16:55:19] gz_a084_b014869_index3-i330_20190626.html : 
+[2019-06-28 16:55:19] This has less than 59 new records. file name = gz_a084_b014869_index3-i331_20190626.html; new record number / total record number = 43/60
+[2019-06-28 16:55:19] gz_a084_b014869_index3-i331_20190626.html : 
+[2019-06-28 16:55:19] This has less than 59 new records. file name = gz_a084_b014869_index3-i332_20190626.html; new record number / total record number = 44/60
+[2019-06-28 16:55:19] gz_a084_b014869_index3-i332_20190626.html : 
+[2019-06-28 16:55:19] This has less than 59 new records. file name = gz_a084_b014869_index3-i333_20190626.html; new record number / total record number = 39/60
+[2019-06-28 16:55:19] gz_a084_b014869_index3-i333_20190626.html : 
+[2019-06-28 16:55:19] This has less than 59 new records. file name = gz_a084_b014869_index3-i334_20190626.html; new record number / total record number = 39/60
+[2019-06-28 16:55:19] gz_a084_b014869_index3-i334_20190626.html : 
+[2019-06-28 16:55:19] This has less than 59 new records. file name = gz_a084_b014869_index3-i335_20190626.html; new record number / total record number = 34/60
+[2019-06-28 16:55:19] gz_a084_b014869_index3-i335_20190626.html : 
+[2019-06-28 16:55:19] This has less than 59 new records. file name = gz_a084_b014869_index3-i336_20190626.html; new record number / total record number = 41/60
+[2019-06-28 16:55:19] gz_a084_b014869_index3-i336_20190626.html : 
+[2019-06-28 16:55:19] This has less than 59 new records. file name = gz_a084_b014869_index3-i337_20190626.html; new record number / total record number = 41/60
+[2019-06-28 16:55:19] gz_a084_b014869_index3-i337_20190626.html : 
+[2019-06-28 16:55:20] This has less than 59 new records. file name = gz_a084_b014869_index3-i338_20190626.html; new record number / total record number = 37/60
+[2019-06-28 16:55:20] gz_a084_b014869_index3-i338_20190626.html : 
+[2019-06-28 16:55:20] This has less than 59 new records. file name = gz_a084_b014869_index3-i339_20190626.html; new record number / total record number = 35/60
+[2019-06-28 16:55:20] gz_a084_b014869_index3-i339_20190626.html : 
+[2019-06-28 16:55:20] This has less than 59 new records. file name = gz_a084_b014869_index3-i33_20190626.html; new record number / total record number = 33/60
+[2019-06-28 16:55:20] gz_a084_b014869_index3-i33_20190626.html : 
+[2019-06-28 16:55:20] This has less than 59 new records. file name = gz_a084_b014869_index3-i340_20190626.html; new record number / total record number = 41/60
+[2019-06-28 16:55:20] gz_a084_b014869_index3-i340_20190626.html : 
+[2019-06-28 16:55:20] This has less than 59 new records. file name = gz_a084_b014869_index3-i341_20190626.html; new record number / total record number = 32/60
+[2019-06-28 16:55:20] gz_a084_b014869_index3-i341_20190626.html : 
+[2019-06-28 16:55:20] This has less than 59 new records. file name = gz_a084_b014869_index3-i342_20190626.html; new record number / total record number = 34/60
+[2019-06-28 16:55:20] gz_a084_b014869_index3-i342_20190626.html : 
+[2019-06-28 16:55:21] This has less than 59 new records. file name = gz_a084_b014869_index3-i343_20190626.html; new record number / total record number = 37/60
+[2019-06-28 16:55:21] gz_a084_b014869_index3-i343_20190626.html : 
+[2019-06-28 16:55:21] This has less than 59 new records. file name = gz_a084_b014869_index3-i344_20190626.html; new record number / total record number = 38/60
+[2019-06-28 16:55:21] gz_a084_b014869_index3-i344_20190626.html : 
+[2019-06-28 16:55:21] This has less than 59 new records. file name = gz_a084_b014869_index3-i345_20190626.html; new record number / total record number = 30/60
+[2019-06-28 16:55:21] gz_a084_b014869_index3-i345_20190626.html : 
+[2019-06-28 16:55:21] This has less than 59 new records. file name = gz_a084_b014869_index3-i346_20190626.html; new record number / total record number = 33/60
+[2019-06-28 16:55:21] gz_a084_b014869_index3-i346_20190626.html : 
+[2019-06-28 16:55:21] This has less than 59 new records. file name = gz_a084_b014869_index3-i347_20190626.html; new record number / total record number = 28/60
+[2019-06-28 16:55:21] gz_a084_b014869_index3-i347_20190626.html : 
+[2019-06-28 16:55:22] This has less than 59 new records. file name = gz_a084_b014869_index3-i348_20190626.html; new record number / total record number = 30/60
+[2019-06-28 16:55:22] gz_a084_b014869_index3-i348_20190626.html : 
+[2019-06-28 16:55:22] This has less than 59 new records. file name = gz_a084_b014869_index3-i349_20190626.html; new record number / total record number = 30/60
+[2019-06-28 16:55:22] gz_a084_b014869_index3-i349_20190626.html : 
+[2019-06-28 16:55:22] This has less than 59 new records. file name = gz_a084_b014869_index3-i34_20190626.html; new record number / total record number = 29/60
+[2019-06-28 16:55:22] gz_a084_b014869_index3-i34_20190626.html : 
+[2019-06-28 16:55:22] This has less than 59 new records. file name = gz_a084_b014869_index3-i350_20190626.html; new record number / total record number = 33/60
+[2019-06-28 16:55:22] gz_a084_b014869_index3-i350_20190626.html : 
+[2019-06-28 16:55:23] This has less than 59 new records. file name = gz_a084_b014869_index3-i351_20190626.html; new record number / total record number = 40/60
+[2019-06-28 16:55:23] gz_a084_b014869_index3-i351_20190626.html : 
+[2019-06-28 16:55:23] This has less than 59 new records. file name = gz_a084_b014869_index3-i352_20190626.html; new record number / total record number = 31/60
+[2019-06-28 16:55:23] gz_a084_b014869_index3-i352_20190626.html : 
+[2019-06-28 16:55:23] This has less than 59 new records. file name = gz_a084_b014869_index3-i353_20190626.html; new record number / total record number = 24/60
+[2019-06-28 16:55:23] gz_a084_b014869_index3-i353_20190626.html : 
+[2019-06-28 16:55:23] This has less than 59 new records. file name = gz_a084_b014869_index3-i354_20190626.html; new record number / total record number = 32/60
+[2019-06-28 16:55:23] gz_a084_b014869_index3-i354_20190626.html : 
+[2019-06-28 16:55:23] This has less than 59 new records. file name = gz_a084_b014869_index3-i355_20190626.html; new record number / total record number = 24/60
+[2019-06-28 16:55:23] gz_a084_b014869_index3-i355_20190626.html : 
+[2019-06-28 16:55:24] This has less than 59 new records. file name = gz_a084_b014869_index3-i356_20190626.html; new record number / total record number = 32/60
+[2019-06-28 16:55:24] gz_a084_b014869_index3-i356_20190626.html : 
+[2019-06-28 16:55:24] This has less than 59 new records. file name = gz_a084_b014869_index3-i357_20190626.html; new record number / total record number = 33/60
+[2019-06-28 16:55:24] gz_a084_b014869_index3-i357_20190626.html : 
+[2019-06-28 16:55:24] This has less than 59 new records. file name = gz_a084_b014869_index3-i358_20190626.html; new record number / total record number = 28/60
+[2019-06-28 16:55:24] gz_a084_b014869_index3-i358_20190626.html : 
+[2019-06-28 16:55:24] This has less than 59 new records. file name = gz_a084_b014869_index3-i359_20190626.html; new record number / total record number = 27/60
+[2019-06-28 16:55:24] gz_a084_b014869_index3-i359_20190626.html : 
+[2019-06-28 16:55:24] This has less than 59 new records. file name = gz_a084_b014869_index3-i35_20190626.html; new record number / total record number = 21/60
+[2019-06-28 16:55:24] gz_a084_b014869_index3-i35_20190626.html : 
+[2019-06-28 16:55:25] This has less than 59 new records. file name = gz_a084_b014869_index3-i360_20190626.html; new record number / total record number = 29/60
+[2019-06-28 16:55:25] gz_a084_b014869_index3-i360_20190626.html : 
+[2019-06-28 16:55:25] This has less than 59 new records. file name = gz_a084_b014869_index3-i361_20190626.html; new record number / total record number = 24/60
+[2019-06-28 16:55:25] gz_a084_b014869_index3-i361_20190626.html : 
+[2019-06-28 16:55:25] This has less than 59 new records. file name = gz_a084_b014869_index3-i362_20190626.html; new record number / total record number = 30/60
+[2019-06-28 16:55:25] gz_a084_b014869_index3-i362_20190626.html : 
+[2019-06-28 16:55:25] This has less than 59 new records. file name = gz_a084_b014869_index3-i363_20190626.html; new record number / total record number = 28/60
+[2019-06-28 16:55:25] gz_a084_b014869_index3-i363_20190626.html : 
+[2019-06-28 16:55:25] This has less than 59 new records. file name = gz_a084_b014869_index3-i364_20190626.html; new record number / total record number = 31/31
+[2019-06-28 16:55:25] gz_a084_b014869_index3-i364_20190626.html : 
+[2019-06-28 16:55:25] This has less than 59 new records. file name = gz_a084_b014869_index3-i36_20190626.html; new record number / total record number = 17/60
+[2019-06-28 16:55:25] gz_a084_b014869_index3-i36_20190626.html : 
+[2019-06-28 16:55:26] This has less than 59 new records. file name = gz_a084_b014869_index3-i37_20190626.html; new record number / total record number = 32/60
+[2019-06-28 16:55:26] gz_a084_b014869_index3-i37_20190626.html : 
+[2019-06-28 16:55:26] This has less than 59 new records. file name = gz_a084_b014869_index3-i38_20190626.html; new record number / total record number = 24/60
+[2019-06-28 16:55:26] gz_a084_b014869_index3-i38_20190626.html : 
+[2019-06-28 16:55:26] This has less than 59 new records. file name = gz_a084_b014869_index3-i39_20190626.html; new record number / total record number = 24/60
+[2019-06-28 16:55:26] gz_a084_b014869_index3-i39_20190626.html : 
+[2019-06-28 16:55:26] This has 59 or more new records. file name = gz_a084_b014869_index4-i310_20190626.html; record number == 60
+[2019-06-28 16:55:26] gz_a084_b014869_index4-i310_20190626.html : 
+[2019-06-28 16:55:26] This has 59 or more new records. file name = gz_a084_b014869_index4-i311_20190626.html; record number == 60
+[2019-06-28 16:55:26] gz_a084_b014869_index4-i311_20190626.html : 
+[2019-06-28 16:55:27] This has less than 59 new records. file name = gz_a084_b014869_index4-i312_20190626.html; new record number / total record number = 50/60
+[2019-06-28 16:55:27] gz_a084_b014869_index4-i312_20190626.html : 
+[2019-06-28 16:55:27] This has less than 59 new records. file name = gz_a084_b014869_index4-i313_20190626.html; new record number / total record number = 50/60
+[2019-06-28 16:55:27] gz_a084_b014869_index4-i313_20190626.html : 
+[2019-06-28 16:55:27] This has less than 59 new records. file name = gz_a084_b014869_index4-i314_20190626.html; new record number / total record number = 11/13
+[2019-06-28 16:55:27] gz_a084_b014869_index4-i314_20190626.html : 
+[2019-06-28 16:55:27] This has less than 59 new records. file name = gz_a084_b014869_index4-i32_20190626.html; new record number / total record number = 46/60
+[2019-06-28 16:55:27] gz_a084_b014869_index4-i32_20190626.html : 
+[2019-06-28 16:55:27] This has less than 59 new records. file name = gz_a084_b014869_index4-i33_20190626.html; new record number / total record number = 43/60
+[2019-06-28 16:55:27] gz_a084_b014869_index4-i33_20190626.html : 
+[2019-06-28 16:55:28] This has less than 59 new records. file name = gz_a084_b014869_index4-i34_20190626.html; new record number / total record number = 40/60
+[2019-06-28 16:55:28] gz_a084_b014869_index4-i34_20190626.html : 
+[2019-06-28 16:55:28] This has less than 59 new records. file name = gz_a084_b014869_index4-i35_20190626.html; new record number / total record number = 33/60
+[2019-06-28 16:55:28] gz_a084_b014869_index4-i35_20190626.html : 
+[2019-06-28 16:55:28] This has less than 59 new records. file name = gz_a084_b014869_index4-i36_20190626.html; new record number / total record number = 39/60
+[2019-06-28 16:55:28] gz_a084_b014869_index4-i36_20190626.html : 
+[2019-06-28 16:55:28] This has less than 59 new records. file name = gz_a084_b014869_index4-i37_20190626.html; new record number / total record number = 35/60
+[2019-06-28 16:55:28] gz_a084_b014869_index4-i37_20190626.html : 
+[2019-06-28 16:55:28] This has less than 59 new records. file name = gz_a084_b014869_index4-i38_20190626.html; new record number / total record number = 27/60
+[2019-06-28 16:55:28] gz_a084_b014869_index4-i38_20190626.html : 
+[2019-06-28 16:55:29] This has less than 59 new records. file name = gz_a084_b014869_index4-i39_20190626.html; new record number / total record number = 24/60
+[2019-06-28 16:55:29] gz_a084_b014869_index4-i39_20190626.html : 
+[2019-06-28 16:55:29] This has less than 59 new records. file name = gz_a084_b014869_index5-i32_20190626.html; new record number / total record number = 23/23
+[2019-06-28 16:55:29] gz_a084_b014869_index5-i32_20190626.html : 
+[2019-06-28 16:55:29] This has 59 or more new records. file name = gz_a084_b017043_index10_20190626.html; record number == 60
+[2019-06-28 16:55:29] gz_a084_b017043_index10_20190626.html : 
+[2019-06-28 16:55:29] This has 59 or more new records. file name = gz_a084_b017043_index11_20190626.html; record number == 60
+[2019-06-28 16:55:29] gz_a084_b017043_index11_20190626.html : 
+[2019-06-28 16:55:29] This has less than 59 new records. file name = gz_a084_b017043_index12_20190626.html; new record number / total record number = 56/60
+[2019-06-28 16:55:29] gz_a084_b017043_index12_20190626.html : 
+[2019-06-28 16:55:30] This has less than 59 new records. file name = gz_a084_b017043_index13_20190626.html; new record number / total record number = 54/60
+[2019-06-28 16:55:30] gz_a084_b017043_index13_20190626.html : 
+[2019-06-28 16:55:30] This has less than 59 new records. file name = gz_a084_b017043_index14_20190626.html; new record number / total record number = 56/60
+[2019-06-28 16:55:30] gz_a084_b017043_index14_20190626.html : 
+[2019-06-28 16:55:30] This has less than 59 new records. file name = gz_a084_b017043_index15_20190626.html; new record number / total record number = 56/60
+[2019-06-28 16:55:30] gz_a084_b017043_index15_20190626.html : 
+[2019-06-28 16:55:30] This has less than 59 new records. file name = gz_a084_b017043_index16_20190626.html; new record number / total record number = 51/60
+[2019-06-28 16:55:30] gz_a084_b017043_index16_20190626.html : 
+[2019-06-28 16:55:30] This has less than 59 new records. file name = gz_a084_b017043_index17_20190626.html; new record number / total record number = 51/60
+[2019-06-28 16:55:30] gz_a084_b017043_index17_20190626.html : 
+[2019-06-28 16:55:30] This has less than 59 new records. file name = gz_a084_b017043_index18_20190626.html; new record number / total record number = 55/60
+[2019-06-28 16:55:31] gz_a084_b017043_index18_20190626.html : 
+[2019-06-28 16:55:31] This has less than 59 new records. file name = gz_a084_b017043_index19_20190626.html; new record number / total record number = 46/60
+[2019-06-28 16:55:31] gz_a084_b017043_index19_20190626.html : 
+[2019-06-28 16:55:31] This has less than 59 new records. file name = gz_a084_b017043_index1_20190626.html; new record number / total record number = 47/62
+[2019-06-28 16:55:31] gz_a084_b017043_index1_20190626.html : 
+[2019-06-28 16:55:31] This has less than 59 new records. file name = gz_a084_b017043_index20_20190626.html; new record number / total record number = 43/60
+[2019-06-28 16:55:31] gz_a084_b017043_index20_20190626.html : 
+[2019-06-28 16:55:31] This has less than 59 new records. file name = gz_a084_b017043_index21_20190626.html; new record number / total record number = 38/60
+[2019-06-28 16:55:31] gz_a084_b017043_index21_20190626.html : 
+[2019-06-28 16:55:31] This has less than 59 new records. file name = gz_a084_b017043_index22_20190626.html; new record number / total record number = 48/60
+[2019-06-28 16:55:31] gz_a084_b017043_index22_20190626.html : 
+[2019-06-28 16:55:32] This has less than 59 new records. file name = gz_a084_b017043_index23_20190626.html; new record number / total record number = 43/60
+[2019-06-28 16:55:32] gz_a084_b017043_index23_20190626.html : 
+[2019-06-28 16:55:32] This has less than 59 new records. file name = gz_a084_b017043_index24_20190626.html; new record number / total record number = 41/60
+[2019-06-28 16:55:32] gz_a084_b017043_index24_20190626.html : 
+[2019-06-28 16:55:32] This has less than 59 new records. file name = gz_a084_b017043_index25_20190626.html; new record number / total record number = 40/60
+[2019-06-28 16:55:32] gz_a084_b017043_index25_20190626.html : 
+[2019-06-28 16:55:32] This has less than 59 new records. file name = gz_a084_b017043_index26_20190626.html; new record number / total record number = 42/60
+[2019-06-28 16:55:32] gz_a084_b017043_index26_20190626.html : 
+[2019-06-28 16:55:32] This has less than 59 new records. file name = gz_a084_b017043_index27_20190626.html; new record number / total record number = 29/60
+[2019-06-28 16:55:32] gz_a084_b017043_index27_20190626.html : 
+[2019-06-28 16:55:33] This has less than 59 new records. file name = gz_a084_b017043_index28_20190626.html; new record number / total record number = 36/60
+[2019-06-28 16:55:33] gz_a084_b017043_index28_20190626.html : 
+[2019-06-28 16:55:33] This has less than 59 new records. file name = gz_a084_b017043_index29_20190626.html; new record number / total record number = 39/60
+[2019-06-28 16:55:33] gz_a084_b017043_index29_20190626.html : 
+[2019-06-28 16:55:33] This has less than 59 new records. file name = gz_a084_b017043_index2_20190626.html; new record number / total record number = 38/60
+[2019-06-28 16:55:33] gz_a084_b017043_index2_20190626.html : 
+[2019-06-28 16:55:33] This has less than 59 new records. file name = gz_a084_b017043_index30_20190626.html; new record number / total record number = 34/60
+[2019-06-28 16:55:33] gz_a084_b017043_index30_20190626.html : 
+[2019-06-28 16:55:33] This has less than 59 new records. file name = gz_a084_b017043_index31_20190626.html; new record number / total record number = 36/60
+[2019-06-28 16:55:33] gz_a084_b017043_index31_20190626.html : 
+[2019-06-28 16:55:34] This has less than 59 new records. file name = gz_a084_b017043_index32_20190626.html; new record number / total record number = 32/60
+[2019-06-28 16:55:34] gz_a084_b017043_index32_20190626.html : 
+[2019-06-28 16:55:34] This has less than 59 new records. file name = gz_a084_b017043_index33_20190626.html; new record number / total record number = 26/60
+[2019-06-28 16:55:34] gz_a084_b017043_index33_20190626.html : 
+[2019-06-28 16:55:34] This has less than 59 new records. file name = gz_a084_b017043_index34_20190626.html; new record number / total record number = 34/60
+[2019-06-28 16:55:34] gz_a084_b017043_index34_20190626.html : 
+[2019-06-28 16:55:34] This has less than 59 new records. file name = gz_a084_b017043_index35_20190626.html; new record number / total record number = 24/60
+[2019-06-28 16:55:34] gz_a084_b017043_index35_20190626.html : 
+[2019-06-28 16:55:34] This has less than 59 new records. file name = gz_a084_b017043_index36_20190626.html; new record number / total record number = 36/60
+[2019-06-28 16:55:34] gz_a084_b017043_index36_20190626.html : 
+[2019-06-28 16:55:35] This has less than 59 new records. file name = gz_a084_b017043_index37_20190626.html; new record number / total record number = 31/60
+[2019-06-28 16:55:35] gz_a084_b017043_index37_20190626.html : 
+[2019-06-28 16:55:35] This has less than 59 new records. file name = gz_a084_b017043_index38_20190626.html; new record number / total record number = 26/60
+[2019-06-28 16:55:35] gz_a084_b017043_index38_20190626.html : 
+[2019-06-28 16:55:35] This has less than 59 new records. file name = gz_a084_b017043_index39_20190626.html; new record number / total record number = 28/60
+[2019-06-28 16:55:35] gz_a084_b017043_index39_20190626.html : 
+[2019-06-28 16:55:35] This has less than 59 new records. file name = gz_a084_b017043_index3_20190626.html; new record number / total record number = 26/60
+[2019-06-28 16:55:35] gz_a084_b017043_index3_20190626.html : 
+[2019-06-28 16:55:35] This has less than 59 new records. file name = gz_a084_b017043_index40_20190626.html; new record number / total record number = 9/9
+[2019-06-28 16:55:35] gz_a084_b017043_index40_20190626.html : 
+[2019-06-28 16:55:35] This has less than 59 new records. file name = gz_a084_b017043_index4_20190626.html; new record number / total record number = 29/60
+[2019-06-28 16:55:36] gz_a084_b017043_index4_20190626.html : 
+[2019-06-28 16:55:36] This has less than 59 new records. file name = gz_a084_b017043_index5_20190626.html; new record number / total record number = 27/60
+[2019-06-28 16:55:36] gz_a084_b017043_index5_20190626.html : 
+[2019-06-28 16:55:36] This has less than 59 new records. file name = gz_a084_b017043_index6_20190626.html; new record number / total record number = 23/60
+[2019-06-28 16:55:36] gz_a084_b017043_index6_20190626.html : 
+[2019-06-28 16:55:36] This has less than 59 new records. file name = gz_a084_b017043_index7_20190626.html; new record number / total record number = 25/60
+[2019-06-28 16:55:36] gz_a084_b017043_index7_20190626.html : 
+[2019-06-28 16:55:36] This has less than 59 new records. file name = gz_a084_b017043_index8_20190626.html; new record number / total record number = 23/60
+[2019-06-28 16:55:36] gz_a084_b017043_index8_20190626.html : 
+[2019-06-28 16:55:36] This has less than 59 new records. file name = gz_a084_b017043_index9_20190626.html; new record number / total record number = 18/60
+[2019-06-28 16:55:36] gz_a084_b017043_index9_20190626.html : 
+[2019-06-28 16:55:37] This has 59 or more new records. file name = gz_a084_b017045_index10_20190626.html; record number == 60
+[2019-06-28 16:55:37] gz_a084_b017045_index10_20190626.html : 
+[2019-06-28 16:55:37] This has less than 59 new records. file name = gz_a084_b017045_index11_20190626.html; new record number / total record number = 57/60
+[2019-06-28 16:55:37] gz_a084_b017045_index11_20190626.html : 
+[2019-06-28 16:55:37] This has less than 59 new records. file name = gz_a084_b017045_index12_20190626.html; new record number / total record number = 58/60
+[2019-06-28 16:55:37] gz_a084_b017045_index12_20190626.html : 
+[2019-06-28 16:55:37] This has less than 59 new records. file name = gz_a084_b017045_index13_20190626.html; new record number / total record number = 55/60
+[2019-06-28 16:55:37] gz_a084_b017045_index13_20190626.html : 
+[2019-06-28 16:55:37] This has less than 59 new records. file name = gz_a084_b017045_index14_20190626.html; new record number / total record number = 56/60
+[2019-06-28 16:55:37] gz_a084_b017045_index14_20190626.html : 
+[2019-06-28 16:55:38] This has less than 59 new records. file name = gz_a084_b017045_index15_20190626.html; new record number / total record number = 46/60
+[2019-06-28 16:55:38] gz_a084_b017045_index15_20190626.html : 
+[2019-06-28 16:55:38] This has less than 59 new records. file name = gz_a084_b017045_index16_20190626.html; new record number / total record number = 49/60
+[2019-06-28 16:55:38] gz_a084_b017045_index16_20190626.html : 
+[2019-06-28 16:55:38] This has less than 59 new records. file name = gz_a084_b017045_index17_20190626.html; new record number / total record number = 51/60
+[2019-06-28 16:55:38] gz_a084_b017045_index17_20190626.html : 
+[2019-06-28 16:55:38] This has less than 59 new records. file name = gz_a084_b017045_index18_20190626.html; new record number / total record number = 40/60
+[2019-06-28 16:55:38] gz_a084_b017045_index18_20190626.html : 
+[2019-06-28 16:55:38] This has less than 59 new records. file name = gz_a084_b017045_index19_20190626.html; new record number / total record number = 46/60
+[2019-06-28 16:55:38] gz_a084_b017045_index19_20190626.html : 
+[2019-06-28 16:55:39] This has less than 59 new records. file name = gz_a084_b017045_index1_20190626.html; new record number / total record number = 50/66
+[2019-06-28 16:55:39] gz_a084_b017045_index1_20190626.html : 
+[2019-06-28 16:55:39] This has less than 59 new records. file name = gz_a084_b017045_index20_20190626.html; new record number / total record number = 44/60
+[2019-06-28 16:55:39] gz_a084_b017045_index20_20190626.html : 
+[2019-06-28 16:55:39] This has less than 59 new records. file name = gz_a084_b017045_index21_20190626.html; new record number / total record number = 47/60
+[2019-06-28 16:55:39] gz_a084_b017045_index21_20190626.html : 
+[2019-06-28 16:55:39] This has less than 59 new records. file name = gz_a084_b017045_index22_20190626.html; new record number / total record number = 37/60
+[2019-06-28 16:55:39] gz_a084_b017045_index22_20190626.html : 
+[2019-06-28 16:55:39] This has less than 59 new records. file name = gz_a084_b017045_index23_20190626.html; new record number / total record number = 36/60
+[2019-06-28 16:55:39] gz_a084_b017045_index23_20190626.html : 
+[2019-06-28 16:55:40] This has less than 59 new records. file name = gz_a084_b017045_index24_20190626.html; new record number / total record number = 42/60
+[2019-06-28 16:55:40] gz_a084_b017045_index24_20190626.html : 
+[2019-06-28 16:55:40] This has less than 59 new records. file name = gz_a084_b017045_index25_20190626.html; new record number / total record number = 36/60
+[2019-06-28 16:55:40] gz_a084_b017045_index25_20190626.html : 
+[2019-06-28 16:55:40] This has less than 59 new records. file name = gz_a084_b017045_index26_20190626.html; new record number / total record number = 37/60
+[2019-06-28 16:55:40] gz_a084_b017045_index26_20190626.html : 
+[2019-06-28 16:55:40] This has less than 59 new records. file name = gz_a084_b017045_index27_20190626.html; new record number / total record number = 34/60
+[2019-06-28 16:55:40] gz_a084_b017045_index27_20190626.html : 
+[2019-06-28 16:55:41] This has less than 59 new records. file name = gz_a084_b017045_index28_20190626.html; new record number / total record number = 31/60
+[2019-06-28 16:55:41] gz_a084_b017045_index28_20190626.html : 
+[2019-06-28 16:55:41] This has less than 59 new records. file name = gz_a084_b017045_index29_20190626.html; new record number / total record number = 33/60
+[2019-06-28 16:55:41] gz_a084_b017045_index29_20190626.html : 
+[2019-06-28 16:55:41] This has less than 59 new records. file name = gz_a084_b017045_index2_20190626.html; new record number / total record number = 29/60
+[2019-06-28 16:55:41] gz_a084_b017045_index2_20190626.html : 
+[2019-06-28 16:55:41] This has less than 59 new records. file name = gz_a084_b017045_index30_20190626.html; new record number / total record number = 31/60
+[2019-06-28 16:55:41] gz_a084_b017045_index30_20190626.html : 
+[2019-06-28 16:55:41] This has less than 59 new records. file name = gz_a084_b017045_index31_20190626.html; new record number / total record number = 36/60
+[2019-06-28 16:55:41] gz_a084_b017045_index31_20190626.html : 
+[2019-06-28 16:55:42] This has less than 59 new records. file name = gz_a084_b017045_index32_20190626.html; new record number / total record number = 30/45
+[2019-06-28 16:55:42] gz_a084_b017045_index32_20190626.html : 
+[2019-06-28 16:55:42] This has less than 59 new records. file name = gz_a084_b017045_index3_20190626.html; new record number / total record number = 32/60
+[2019-06-28 16:55:42] gz_a084_b017045_index3_20190626.html : 
+[2019-06-28 16:55:42] This has less than 59 new records. file name = gz_a084_b017045_index4_20190626.html; new record number / total record number = 23/60
+[2019-06-28 16:55:42] gz_a084_b017045_index4_20190626.html : 
+[2019-06-28 16:55:42] This has less than 59 new records. file name = gz_a084_b017045_index5_20190626.html; new record number / total record number = 30/60
+[2019-06-28 16:55:42] gz_a084_b017045_index5_20190626.html : 
+[2019-06-28 16:55:43] This has less than 59 new records. file name = gz_a084_b017045_index6_20190626.html; new record number / total record number = 26/60
+[2019-06-28 16:55:43] gz_a084_b017045_index6_20190626.html : 
+[2019-06-28 16:55:43] This has less than 59 new records. file name = gz_a084_b017045_index7_20190626.html; new record number / total record number = 24/60
+[2019-06-28 16:55:43] gz_a084_b017045_index7_20190626.html : 
+[2019-06-28 16:55:43] This has less than 59 new records. file name = gz_a084_b017045_index8_20190626.html; new record number / total record number = 23/60
+[2019-06-28 16:55:43] gz_a084_b017045_index8_20190626.html : 
+[2019-06-28 16:55:43] This has less than 59 new records. file name = gz_a084_b017045_index9_20190626.html; new record number / total record number = 19/60
+[2019-06-28 16:55:43] gz_a084_b017045_index9_20190626.html : 
+[2019-06-28 16:55:43] This has 59 or more new records. file name = gz_a084_b019624_index10_20190626.html; record number == 60
+[2019-06-28 16:55:43] gz_a084_b019624_index10_20190626.html : 
+[2019-06-28 16:55:44] This has less than 59 new records. file name = gz_a084_b019624_index11_20190626.html; new record number / total record number = 58/60
+[2019-06-28 16:55:44] gz_a084_b019624_index11_20190626.html : 
+[2019-06-28 16:55:44] This has less than 59 new records. file name = gz_a084_b019624_index12_20190626.html; new record number / total record number = 55/60
+[2019-06-28 16:55:44] gz_a084_b019624_index12_20190626.html : 
+[2019-06-28 16:55:44] This has less than 59 new records. file name = gz_a084_b019624_index13_20190626.html; new record number / total record number = 53/60
+[2019-06-28 16:55:44] gz_a084_b019624_index13_20190626.html : 
+[2019-06-28 16:55:44] This has less than 59 new records. file name = gz_a084_b019624_index14_20190626.html; new record number / total record number = 53/60
+[2019-06-28 16:55:44] gz_a084_b019624_index14_20190626.html : 
+[2019-06-28 16:55:45] This has less than 59 new records. file name = gz_a084_b019624_index15_20190626.html; new record number / total record number = 45/60
+[2019-06-28 16:55:45] gz_a084_b019624_index15_20190626.html : 
+[2019-06-28 16:55:45] This has less than 59 new records. file name = gz_a084_b019624_index16_20190626.html; new record number / total record number = 47/60
+[2019-06-28 16:55:45] gz_a084_b019624_index16_20190626.html : 
+[2019-06-28 16:55:45] This has less than 59 new records. file name = gz_a084_b019624_index17_20190626.html; new record number / total record number = 46/60
+[2019-06-28 16:55:45] gz_a084_b019624_index17_20190626.html : 
+[2019-06-28 16:55:45] This has less than 59 new records. file name = gz_a084_b019624_index18_20190626.html; new record number / total record number = 45/60
+[2019-06-28 16:55:45] gz_a084_b019624_index18_20190626.html : 
+[2019-06-28 16:55:45] This has less than 59 new records. file name = gz_a084_b019624_index19_20190626.html; new record number / total record number = 47/60
+[2019-06-28 16:55:45] gz_a084_b019624_index19_20190626.html : 
+[2019-06-28 16:55:46] This has less than 59 new records. file name = gz_a084_b019624_index1_20190626.html; new record number / total record number = 38/61
+[2019-06-28 16:55:46] gz_a084_b019624_index1_20190626.html : 
+[2019-06-28 16:55:46] This has less than 59 new records. file name = gz_a084_b019624_index20_20190626.html; new record number / total record number = 41/60
+[2019-06-28 16:55:46] gz_a084_b019624_index20_20190626.html : 
+[2019-06-28 16:55:46] This has less than 59 new records. file name = gz_a084_b019624_index21_20190626.html; new record number / total record number = 41/60
+[2019-06-28 16:55:46] gz_a084_b019624_index21_20190626.html : 
+[2019-06-28 16:55:46] This has less than 59 new records. file name = gz_a084_b019624_index22_20190626.html; new record number / total record number = 41/60
+[2019-06-28 16:55:46] gz_a084_b019624_index22_20190626.html : 
+[2019-06-28 16:55:46] This has less than 59 new records. file name = gz_a084_b019624_index23_20190626.html; new record number / total record number = 32/60
+[2019-06-28 16:55:46] gz_a084_b019624_index23_20190626.html : 
+[2019-06-28 16:55:47] This has less than 59 new records. file name = gz_a084_b019624_index24_20190626.html; new record number / total record number = 29/60
+[2019-06-28 16:55:47] gz_a084_b019624_index24_20190626.html : 
+[2019-06-28 16:55:47] This has less than 59 new records. file name = gz_a084_b019624_index25_20190626.html; new record number / total record number = 37/53
+[2019-06-28 16:55:47] gz_a084_b019624_index25_20190626.html : 
+[2019-06-28 16:55:47] This has less than 59 new records. file name = gz_a084_b019624_index2_20190626.html; new record number / total record number = 27/60
+[2019-06-28 16:55:47] gz_a084_b019624_index2_20190626.html : 
+[2019-06-28 16:55:47] This has less than 59 new records. file name = gz_a084_b019624_index3_20190626.html; new record number / total record number = 35/60
+[2019-06-28 16:55:48] gz_a084_b019624_index3_20190626.html : 
+[2019-06-28 16:55:48] This has less than 59 new records. file name = gz_a084_b019624_index4_20190626.html; new record number / total record number = 36/60
+[2019-06-28 16:55:48] gz_a084_b019624_index4_20190626.html : 
+[2019-06-28 16:55:48] This has less than 59 new records. file name = gz_a084_b019624_index5_20190626.html; new record number / total record number = 26/60
+[2019-06-28 16:55:48] gz_a084_b019624_index5_20190626.html : 
+[2019-06-28 16:55:48] This has less than 59 new records. file name = gz_a084_b019624_index6_20190626.html; new record number / total record number = 27/60
+[2019-06-28 16:55:48] gz_a084_b019624_index6_20190626.html : 
+[2019-06-28 16:55:49] This has less than 59 new records. file name = gz_a084_b019624_index7_20190626.html; new record number / total record number = 25/60
+[2019-06-28 16:55:49] gz_a084_b019624_index7_20190626.html : 
+[2019-06-28 16:55:49] This has less than 59 new records. file name = gz_a084_b019624_index8_20190626.html; new record number / total record number = 26/60
+[2019-06-28 16:55:49] gz_a084_b019624_index8_20190626.html : 
+[2019-06-28 16:55:49] This has less than 59 new records. file name = gz_a084_b019624_index9_20190626.html; new record number / total record number = 24/60
+[2019-06-28 16:55:49] gz_a084_b019624_index9_20190626.html : 
+[2019-06-28 16:55:50] This has 59 or more new records. file name = gz_a084_b019625_index10_20190626.html; record number == 60
+[2019-06-28 16:55:50] gz_a084_b019625_index10_20190626.html : 
+[2019-06-28 16:55:50] This has less than 59 new records. file name = gz_a084_b019625_index11_20190626.html; new record number / total record number = 57/60
+[2019-06-28 16:55:50] gz_a084_b019625_index11_20190626.html : 
+[2019-06-28 16:55:50] This has less than 59 new records. file name = gz_a084_b019625_index12_20190626.html; new record number / total record number = 57/60
+[2019-06-28 16:55:50] gz_a084_b019625_index12_20190626.html : 
+[2019-06-28 16:55:50] This has less than 59 new records. file name = gz_a084_b019625_index13_20190626.html; new record number / total record number = 53/60
+[2019-06-28 16:55:50] gz_a084_b019625_index13_20190626.html : 
+[2019-06-28 16:55:50] This has less than 59 new records. file name = gz_a084_b019625_index14_20190626.html; new record number / total record number = 50/60
+[2019-06-28 16:55:50] gz_a084_b019625_index14_20190626.html : 
+[2019-06-28 16:55:51] This has less than 59 new records. file name = gz_a084_b019625_index15_20190626.html; new record number / total record number = 46/60
+[2019-06-28 16:55:51] gz_a084_b019625_index15_20190626.html : 
+[2019-06-28 16:55:51] This has less than 59 new records. file name = gz_a084_b019625_index16_20190626.html; new record number / total record number = 41/60
+[2019-06-28 16:55:51] gz_a084_b019625_index16_20190626.html : 
+[2019-06-28 16:55:51] This has less than 59 new records. file name = gz_a084_b019625_index17_20190626.html; new record number / total record number = 49/60
+[2019-06-28 16:55:51] gz_a084_b019625_index17_20190626.html : 
+[2019-06-28 16:55:51] This has less than 59 new records. file name = gz_a084_b019625_index18_20190626.html; new record number / total record number = 41/60
+[2019-06-28 16:55:51] gz_a084_b019625_index18_20190626.html : 
+[2019-06-28 16:55:52] This has less than 59 new records. file name = gz_a084_b019625_index19_20190626.html; new record number / total record number = 47/60
+[2019-06-28 16:55:52] gz_a084_b019625_index19_20190626.html : 
+[2019-06-28 16:55:52] This has less than 59 new records. file name = gz_a084_b019625_index1_20190626.html; new record number / total record number = 42/62
+[2019-06-28 16:55:52] gz_a084_b019625_index1_20190626.html : 
+[2019-06-28 16:55:52] This has less than 59 new records. file name = gz_a084_b019625_index20_20190626.html; new record number / total record number = 43/60
+[2019-06-28 16:55:52] gz_a084_b019625_index20_20190626.html : 
+[2019-06-28 16:55:52] This has less than 59 new records. file name = gz_a084_b019625_index21_20190626.html; new record number / total record number = 34/60
+[2019-06-28 16:55:52] gz_a084_b019625_index21_20190626.html : 
+[2019-06-28 16:55:52] This has less than 59 new records. file name = gz_a084_b019625_index22_20190626.html; new record number / total record number = 32/60
+[2019-06-28 16:55:52] gz_a084_b019625_index22_20190626.html : 
+[2019-06-28 16:55:53] This has less than 59 new records. file name = gz_a084_b019625_index23_20190626.html; new record number / total record number = 41/60
+[2019-06-28 16:55:53] gz_a084_b019625_index23_20190626.html : 
+[2019-06-28 16:55:53] This has less than 59 new records. file name = gz_a084_b019625_index24_20190626.html; new record number / total record number = 28/60
+[2019-06-28 16:55:53] gz_a084_b019625_index24_20190626.html : 
+[2019-06-28 16:55:54] This has less than 59 new records. file name = gz_a084_b019625_index25_20190626.html; new record number / total record number = 31/60
+[2019-06-28 16:55:54] gz_a084_b019625_index25_20190626.html : 
+[2019-06-28 16:55:54] This has less than 59 new records. file name = gz_a084_b019625_index26_20190626.html; new record number / total record number = 37/60
+[2019-06-28 16:55:54] gz_a084_b019625_index26_20190626.html : 
+[2019-06-28 16:55:54] Inside Method parse_and_check_crawled_list_html_pages of Class CheckFangesf, Exception = name 'cls' is not defined
+[2019-06-28 16:55:54] This has less than 59 new records. file name = gz_a084_b019625_index2_20190626.html; new record number / total record number = 28/60
+[2019-06-28 16:55:54] gz_a084_b019625_index2_20190626.html : 
+[2019-06-28 16:55:55] This has less than 59 new records. file name = gz_a084_b019625_index3_20190626.html; new record number / total record number = 29/60
+[2019-06-28 16:55:55] gz_a084_b019625_index3_20190626.html : 
+[2019-06-28 16:55:55] This has less than 59 new records. file name = gz_a084_b019625_index4_20190626.html; new record number / total record number = 26/60
+[2019-06-28 16:55:55] gz_a084_b019625_index4_20190626.html : 
+[2019-06-28 16:55:55] This has less than 59 new records. file name = gz_a084_b019625_index5_20190626.html; new record number / total record number = 25/60
+[2019-06-28 16:55:55] gz_a084_b019625_index5_20190626.html : 
+[2019-06-28 16:55:55] This has less than 59 new records. file name = gz_a084_b019625_index6_20190626.html; new record number / total record number = 30/60
+[2019-06-28 16:55:55] gz_a084_b019625_index6_20190626.html : 
+[2019-06-28 16:55:56] This has less than 59 new records. file name = gz_a084_b019625_index7_20190626.html; new record number / total record number = 26/60
+[2019-06-28 16:55:56] gz_a084_b019625_index7_20190626.html : 
+[2019-06-28 16:55:56] This has less than 59 new records. file name = gz_a084_b019625_index8_20190626.html; new record number / total record number = 27/60
+[2019-06-28 16:55:56] gz_a084_b019625_index8_20190626.html : 
+[2019-06-28 16:55:56] This has less than 59 new records. file name = gz_a084_b019625_index9_20190626.html; new record number / total record number = 28/60
+[2019-06-28 16:55:56] gz_a084_b019625_index9_20190626.html : 
+[2019-06-28 16:55:56] This has 59 or more new records. file name = gz_a084_b022787_index1_20190626.html; record number == 60
+[2019-06-28 16:55:56] gz_a084_b022787_index1_20190626.html : 
+[2019-06-28 16:55:57] This has less than 59 new records. file name = gz_a084_b022787_index2_20190626.html; new record number / total record number = 45/60
+[2019-06-28 16:55:57] gz_a084_b022787_index2_20190626.html : 
+[2019-06-28 16:55:57] This has less than 59 new records. file name = gz_a084_b022787_index3_20190626.html; new record number / total record number = 31/60
+[2019-06-28 16:55:57] gz_a084_b022787_index3_20190626.html : 
+[2019-06-28 16:55:57] This has less than 59 new records. file name = gz_a084_b022787_index4_20190626.html; new record number / total record number = 23/45
+[2019-06-28 16:55:57] gz_a084_b022787_index4_20190626.html : 
+[2019-06-28 16:55:57] total detailed html records == 14656
+[2019-06-28 16:55:57] unique_records = 9652

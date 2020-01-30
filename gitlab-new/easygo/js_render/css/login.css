@@ -1,0 +1,125 @@
+
+/* CSS Document*/
+	body {
+	background:url(../images/bg-login.jpg) no-repeat top center;
+	background-size:cover;
+}
+.login-container {
+	width:380px;
+	height:508px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-254px 0 0 -190px;
+	background: -webkit-linear-gradient(top, rgba(54,50,124,1), rgba(54,50,124,.4));
+	background: -moz-linear-gradient(top, rgba(54,50,124,1), rgba(54,50,124,.4));
+	background: -o-linear-gradient(top, rgba(54,50,124,1), rgba(54,50,124,.4));
+}
+.login-container p {
+	width:70%;
+	margin:0 auto;
+	padding:50px 0;
+}
+.login-container p img {
+	width:100%;
+}
+.input-login {
+	width:80%;
+	display:block;
+	color:#fff;
+	margin:0 auto 20px;
+	font-size:14px;
+	background:rgba(122,147,255,.5);
+	height:44px;
+	line-height:44px;
+	padding:0 15px;
+	border:none;
+}
+.btn-login {
+	background:#7a93ff;
+	display:block;
+	cursor:pointer;
+	color:#fff;
+	height:44px;
+	line-height:44px;
+	font-size:16px;
+	text-align:center;
+	width:80%;
+	margin:0 auto;
+	border:none;
+	transition: background linear .3s;
+	-webkit-transition: background linear .3s;
+	-moz-transition: background linear .3s;
+	-ms-transition: background linear .3s;
+}
+.btn-login:hover {
+	background:#6e84e5
+}
+::-webkit-input-placeholder {
+	color: #fff;
+}
+:-moz-placeholder {
+	color: #fff;
+}
+::-moz-placeholder {
+	color: #fff;
+}
+:-ms-input-placeholder {
+	color: #fff;
+}
+.rem-container {
+	padding-bottom:24px;
+	position:relative;
+	width:80%;
+	margin:0 auto;
+	color:#fff;
+}
+.rem-container a {
+	color: #fff;
+	text-decoration:underline
+}
+.rem-container a:hover {
+	text-decoration:none
+}
+.ga-checkbox {
+	font-size: 9px;
+	letter-spacing: -1px;
+	line-height: 15px;
+	margin-right: 10px;
+	float: left;
+	width: 15px;
+	height: 15px
+}
+.ga-checkbox input {
+	cursor: pointer;
+	height: inherit;
+	left: 0;
+	margin: 0;
+	opacity: 0;
+	position: absolute;
+	top: 3px;
+	width: inherit;
+	z-index: 1
+}
+.ga-checkbox input+b {
+	border: 1px solid #7a93ff;
+	width: 14px;
+	line-height: 14px;
+	border-radius: 2px;
+	box-sizing: border-box;
+	cursor: pointer;
+	height: inherit;
+	left: 0;
+	pointer-events: none;
+	position: absolute;
+	top: 3px;
+	z-index: 2
+}
+.ga-checkbox input:checked+b {
+	background:#7a93ff
+}
+.ga-checkbox input:checked+b:after {
+	content: url(../images/icon-checkbox.png);
+	position: absolute;
+	top: -5px;
+}

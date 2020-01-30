@@ -1,0 +1,94 @@
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../font-svg/icomoon.eot?9k3n1c');
+  src:  url('../../font-svg/icomoon.eot?9k3n1c#iefix') format('embedded-opentype'),
+    url('../../font-svg/icomoon.ttf?9k3n1c') format('truetype'),
+    url('../../font-svg/icomoon.woff?9k3n1c') format('woff'),
+    url('../../font-svg/icomoon.svg?9k3n1c#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../font-svg/icomoon.eot?ldqk6f');
+  src:  url('../../font-svg/icomoon.eot?ldqk6f#iefix') format('embedded-opentype'),
+    url('../../font-svg/icomoon.ttf?ldqk6f') format('truetype'),
+    url('../../font-svg/icomoon.woff?ldqk6f') format('woff'),
+    url('../../font-svg/icomoon.svg?ldqk6f#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-boy:before {
+  content: "\e900";
+}
+.icon-building:before {
+  content: "\e901";
+}
+.icon-car:before {
+  content: "\e902";
+}
+.icon-child:before {
+  content: "\e903";
+}
+.icon-girl:before {
+  content: "\e904";
+}
+.icon-logOut:before {
+  content: "\e905";
+}
+.icon-married:before {
+  content: "\e906";
+}
+.icon-mid-old:before {
+  content: "\e907";
+}
+.icon-middle-aged:before {
+  content: "\e908";
+}
+.icon-older:before {
+  content: "\e909";
+}
+.icon-position:before {
+  content: "\e90a";
+}
+.icon-ranking:before {
+  content: "\e90b";
+}
+.icon-search:before {
+  content: "\e90c";
+}
+.icon-throng:before {
+  content: "\e90d";
+}
+.icon-user:before {
+  content: "\e90e";
+}
+.icon-worth:before {
+  content: "\e90f";
+}
+.icon-young:before {
+  content: "\e910";
+}
+.icon-younger:before {
+  content: "\e911";
+}
+
+
+

@@ -1,0 +1,207 @@
+
+/* CSS Document*/
+	@charset "utf-8";
+	* {
+	margin: 0px;
+	padding: 0px;
+}
+A {
+	blr:expression(this.onFocus=this.close());
+}
+A {
+	blr:expression(this.onFocus=this.blur());
+}
+A:focus {
+	outline:0;
+}
+input,button,select,textarea {
+	outline:none;
+}
+textarea {
+	font-size:12px;
+	resize:none;
+}
+img {
+	border:none
+}
+.clearfix:before,.clearfix:after {
+	content:"";
+	display:table;
+}
+.clearfix:after {
+	clear:both;
+}
+.clearfix {
+	*zoom:1;
+}
+html {
+	min-height: 100%;
+	_height:100%;
+}
+body {
+	margin:0;
+	padding:0;
+	background:#f0ece3;
+	color:#657180;
+	font-family:"Microsoft Yahei",Arial;
+	min-height: 100%;
+	_height:100%;
+	font-size:14px;
+}
+
+ul,ol {
+	margin:0;
+	padding:0
+}
+li {
+	list-style:none
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight:normal;
+}
+a {
+	text-decoration:none;
+	text-decoration: none;
+	transition: background-color .5s ease 0s,color .5s ease 0s,width .5s ease 0s,border-width .5s ease 0s,border-color .5s ease 0s;
+	-webkit-transition: background-color .5s ease 0s,color .5s ease 0s,width .5s ease 0s,border-width .5s ease 0s,border-color .5s ease 0s;
+	-moz-transition: background-color .5s ease 0s,color .5s ease 0s,width .5s ease 0s,border-width .5s ease 0s,border-color .5s ease 0s;
+	-ms-transition: background-color .5s ease 0s,color .5s ease 0s,width .5s ease 0s,border-width .5s ease 0s,border-color .5s ease 0s;
+	-o-transition: background-color .5s ease 0s,color .5s ease 0s,width .5s ease 0s,border-width .5s ease 0s,border-color .5s ease 0s
+}
+a:active,a:hover {
+	outline: 0;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.fl {
+	float:left;
+}
+.fr {
+	float:right;
+}
+.trans {
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition:.5s;
+	-o-transition:.5s;
+	-ms-transition: .5s;
+}
+.col-2 {
+	width:50%
+}
+.col-3 {
+	width:33.333%
+}
+.col-4 {
+	width:25%
+}
+.col-5 {
+	width:20%
+}
+.col-6{
+	width:16.66%;
+}
+.col-7 {
+	width:14.28%;
+}
+.spacing-20 {
+	padding:20px;
+}
+.mar-20 {
+	margin:20px
+}
+.no-border {
+	border:0 !important;
+}
+.blue {
+	background:#4e91ff;
+	color:#fff;
+}
+.blue:hover {
+	background:#387cec
+}
+.green {
+	background:#00cb9e;
+	color:#fff;
+}
+.green:hover {
+	background:#05b38c
+}
+.ellipsis {white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/* 设置滚动条的样式*/
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+/* 滚动条滑块*/
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #a9a9a9;
+}
+.scrollbar ::-webkit-scrollbar-thumb {
+    visibility: hidden;
+}
+
+.scrollbar:hover ::-webkit-scrollbar-thumb {
+    visibility: visible
+}
+
+
+/******* dropdown css *******/
+
+.dropdown {
+	position:relative;
+}
+.dropdown .selected {
+	height:30px;
+	line-height:30px;
+	position:relative;
+	margin-right:30px;
+	cursor:pointer
+}
+.dropdown .selected label {
+	min-width:70px;
+	display:inline-block;
+	cursor:pointer
+}
+.dropdown .selected i {
+	position:absolute;
+	right:0;
+	left:auto;
+	top:1px;
+	font-size:28px;
+	font-weight:bold;
+	z-index:3;
+}
+.dropdown-content {
+	position:absolute;
+	top:22px;
+	left:0;
+	padding-top:10px;
+	z-index:10;
+}
+.dropdown ul {
+	background:#fff;
+	box-shadow:0 0 10px #ededed;
+	border-radius:4px;
+	padding:4px 0;
+	min-width:100px;
+	overflow:auto;
+	font-size:14px;
+}
+.dropdown ul li {
+	padding:6px 14px;
+}
+.dropdown ul li:hover {
+	background:#4e91ff;
+	color:#fff;
+	cursor:pointer
+}
+

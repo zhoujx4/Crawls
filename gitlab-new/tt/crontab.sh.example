@@ -1,0 +1,6 @@
+#! /bin/sh
+# cd /home/yujx/crawls
+# git pull origin master
+# sleep 180
+cd /home/yujx/crawls/tt
+nohup /home/yujx/.local/bin/scrapy crawl fang >> fang_zu.log 2>&1 &

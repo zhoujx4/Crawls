@@ -1,0 +1,41 @@
+# https://blog.csdn.net/github_39402773/article/details/79218711
+# we will ignore these following folders and files:
+# this file shall be different and shall be kept locally
+# rename it from sample.gitignore to .gitignore
+
+.gitignore
+
+tt/cached
+tt/logs
+tt/*/__pycache__
+tt/tt/*/__pycache__
+tt/*/logs
+tt/*/local_only
+tt/*/outputs
+tt/*.sh
+
+tt/dianping/fiddler
+tt/dianping/detail_html
+tt/dianping/detail_html_fiddler
+tt/dianping/list_html
+tt/dianping/list_html_fiddler
+tt/dianping/svgtextcss
+tt/dianping/svgtextcss_fiddler
+tt/dianping/crawled/*
+!tt/dianping/crawled/extract_missed_ids.py
+
+easygo/logs
+easygo/logs_parse
+easygo/jsons
+easygo/jsons_parsed
+easygo/__pycache__
+easygo/*/__pycache__
+easygo/results
+easygo/fiddler
+easygo/cpp/exe
+easygo/input/guangdong
+easygo/input/hunan
+easygo/tryouts
+easygo/readme.txt
+
+local_crawls

@@ -1,0 +1,623 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ENTROBUS</title>
+
+<link href="css/lib/font-awesome.min.css" rel="stylesheet" />
+<link href="./libs/jquery-ui/jquery-ui.min.css" rel="stylesheet"/>
+<link href="./libs/layui/css/layui.css" rel="stylesheet"/>
+<link href="./css/index.css" rel="stylesheet" />
+
+<!-- 在线的百度地图js资源 -->
+<script type="text/javascript"
+		src="http://api.map.baidu.com/api?v=2.0&amp;ak=VifdHexZT4WOMrFYCQUZGorpRNjiRHer&amp;services=test"></script>
+<script type="text/javascript"
+		src="http://api.map.baidu.com/getscript?v=2.0&amp;ak=VifdHexZT4WOMrFYCQUZGorpRNjiRHer&amp;services=test&amp;t=20160804144823"></script>
+
+<script type="text/javascript" src="./js/libs/GeoUtils.js"></script>
+<script type="text/javascript" src="./libs/layui/layui.js"></script>
+<script type="text/javascript" src="./libs/jquery-3.3.1.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+	<div style="position: absolute;padding: 10px;z-index: 1;background: #fff;margin: 10px;border: 1px solid rgba(0,0,0,0.5);">
+		热力：<input type="file" onchange="handleFiles(event, 'heat')">
+	</div>
+
+	<div style="position: absolute;top:60px;padding: 10px;z-index: 1;background: #fff;margin: 10px;border: 1px solid rgba(0,0,0,0.5);">
+		标记：<input type="file" onchange="handleFiles(event, 'point')">
+	</div>
+
+	<div class="main">
+		<div class="bmap" id="bmap"></div>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+	var TD = {
+		Config: {
+			// workUrl: "http://city-map.entrobus.com/aggregation-display/libs/tdmap/worker.js",
+			workUrl: "http://city-map.entrobus.com/tobacco/js/libs/tdmap/worker.js",
+			// workUrl: "http://localhost/js_render/libs/tdmap/work.js", // C:\xampp\htdocs\js_render\libs\tdmap
+		}
+	};
+</script>
+
+<script type="text/javascript" src="./libs/tdmap/tdmap.js"></script>
+
+<script type="text/javascript">
+	var map;
+
+	layui.use(['layer', 'laydate', 'util', 'upload'], function(){
+		var upload = layui.upload;
+
+        //处理文件e
+        window.handleFiles = function(e, type){
+            var src = e.target || window.event.srcElement;
+            var fileReader = new FileReader();
+            var file = $(src)[0].files[0];
+            if(file==null){
+                return;
+            }
+
+            fileReader.readAsText(file);
+
+            fileReader.onloadstart = function(){
+                layer.load(2);
+            }
+
+            fileReader.onloadend = function(){
+                layer.closeAll('loading');
+                var points = funs.getPointsFromFileData(fileReader.result, 1);
+                if(points!=null){
+                    if(type=="heat"){
+                        funs.drawHeatOverlay(points);
+                    }else if(type=="point"){
+                        funs.drawPoints(points);
+                    }
+                }
+            }
+        }
+
+		$(function(){
+			//初始化地图
+			funs.initMap();
+			//获取行政区域数据，并回调
+			// funs.getBoundary("株洲", function(){
+			// funs.getBoundary("株洲市株洲县", function(){
+			// funs.getBoundary("株洲市攸县", function(){
+			// funs.getBoundary("株洲市茶陵县", function(){
+			funs.getBoundary("株洲市炎陵县", function(){
+			// funs.getBoundary("株洲市醴陵市", function(){
+				setTimeout(function(){
+					//10000 = 1公里
+					//绘制标记
+					// funs.generateOverlay(50000, "marker");
+					// funs.generateOverlay(20000, "marker");
+					// funs.generateOverlay(30000, "marker");
+					//绘制热力块
+					//注意block热力块，size不能小于20000，否则浏览器可能会崩溃
+					// funs.generateOverlay(50000, "block");
+					// funs.generateOverlay(20000, "block");
+					// funs.generateOverlay(30000, "block");
+				}, 1000);
+			});
+		})
+
+		var funs = {
+			plys: [],
+			mars: null,
+			blos: [],
+
+			heatOva: null,
+
+			scale: 1000000,
+			delayTime: 500,
+			drawOnceLength: 20,
+			drawTimeout: null,
+
+			centerPoint: {
+				lng: 113.263874*1000000,
+				lat: 23.14969*1000000
+			},
+			southWest: {},
+			northEast: {},
+
+			plateStyle: {
+				strokeColor: '#000',
+				fillColor: '#71bc89'
+			},
+
+			blockStyle: {
+				color: '#c23333'
+			},
+
+			markerStyle: {
+				color: '#d340c3',
+				size: 3
+			},
+
+			//初始化地图
+			initMap: function(){
+				//enableMapClick false 禁用兴趣点点击事件
+				map = new BMap.Map('bmap', {enableMapClick:false});
+				map.centerAndZoom(new BMap.Point(113.639913, 27.166587), 12);  // 初始化地图,设置中心点坐标和地图级别
+				map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+				map.addControl(new BMap.ScaleControl());
+				// map.setCurrentCity("株洲");          // 设置地图显示的城市 此项是必须设置的
+				// map.setCurrentCity("株洲市株洲县");
+				// map.setCurrentCity("株洲市攸县");
+				// map.setCurrentCity("株洲市茶陵县");
+				map.setCurrentCity("株洲市炎陵县");
+				// map.setCurrentCity("株洲市醴陵市");
+				map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+				map.disableDoubleClickZoom();        //禁用双击放大
+
+				// map.setMapStyle({styleJson: mapStyle});
+				var opt = new BMap.NavigationControl({
+					anchor: BMAP_ANCHOR_BOTTOM_LEFT,
+					type: BMAP_NAVIGATION_CONTROL_LARGE
+				});
+				map.addControl(opt);
+			},
+			//获取行政区域
+			getBoundary: function(cityName, callback){
+				layer.load(2);
+
+				var bdary = new BMap.Boundary();
+				bdary.get(cityName, function(rs){       //获取行政区域
+					map.clearOverlays();        //清除地图覆盖物
+					var count = rs.boundaries.length; //行政区域的点有多少个
+					if (count === 0) {
+						layer.msg("未能获取当前输入行政区域！", {icon: 5, anim:6});
+
+						return ;
+					}
+
+					var pointArray = [];
+
+					var maxLng = Number.MIN_VALUE;
+					var minLng = Number.MAX_VALUE;
+					var maxLat = Number.MIN_VALUE;
+					var minLat = Number.MAX_VALUE;
+
+					for (var i = 0; i < count; i++) {
+						var ply = new BMap.Polygon(rs.boundaries[i], {strokeWeight: 2, strokeColor: funs.plateStyle.strokeColor, fillColor: funs.plateStyle.fillColor}); //建立多边形覆盖物
+						map.addOverlay(ply);  //添加覆盖物
+						pointArray = pointArray.concat(ply.getPath());
+
+
+						var bounds = ply.getBounds();
+						var southWest = bounds.getSouthWest();
+						var northEast = bounds.getNorthEast();
+
+						if(southWest.lng>maxLng){
+							maxLng = southWest.lng;
+						}
+						if(southWest.lng<minLng){
+							minLng = southWest.lng;
+						}
+						if(southWest.lat>maxLat){
+							maxLat = southWest.lat;
+						}
+						if(southWest.lat<minLat){
+							minLat = southWest.lat;
+						}
+						if(northEast.lng>maxLng){
+							maxLng = northEast.lng;
+						}
+						if(northEast.lng<minLng){
+							minLng = northEast.lng;
+						}
+						if(northEast.lat>maxLat){
+							maxLat = northEast.lat;
+						}
+						if(northEast.lat<minLat){
+							minLat = northEast.lat;
+						}
+
+						funs.plys.push(ply);
+					}
+
+					funs.southWest.lat = minLat;
+					funs.southWest.lng = minLng;
+					funs.northEast.lat = maxLat;
+					funs.northEast.lng = maxLng;
+
+					map.setViewport(pointArray);    //调整视野
+
+					layer.closeAll('loading');
+
+					if(callback){
+						callback();
+					}
+				});
+			},
+			//生成覆盖物
+			//drawType：point,block
+			generateOverlay: function(space, drawType){
+				var bounds = map.getBounds();
+				var southWest = bounds.getSouthWest();
+				var northEast = bounds.getNorthEast();
+
+				//如果放大级别小于10，则采用城市边界限制绘画范围
+				southWest.lng = southWest.lng < funs.southWest.lng? funs.southWest.lng: southWest.lng;
+				southWest.lat = southWest.lat < funs.southWest.lat? funs.southWest.lat: southWest.lat;
+				northEast.lng = northEast.lng > funs.northEast.lng? funs.northEast.lng: northEast.lng;
+				northEast.lat = northEast.lat > funs.northEast.lat? funs.northEast.lat: northEast.lat;
+
+				var scale = funs.scale;
+
+				var start = {
+					lat: southWest.lat*scale,
+					lng: southWest.lng*scale
+				}//绘制起点-西南
+
+				var end = {
+					lat: northEast.lat*scale,
+					lng: northEast.lng*scale
+				}//绘制终点-东北
+
+				//需对绘制起点进行规划，强转为整数，得到的一定得是第一次绘制时的space的倍数，
+				start.lat = funs.centerPoint.lat - parseInt((funs.centerPoint.lat - start.lat)/space)*space;
+				start.lng = funs.centerPoint.lng - parseInt((funs.centerPoint.lng - start.lng)/space)*space;
+				start.lat -= space;
+				start.lng -= space;
+				//有可能边界上的矩形会绘制不了，此时需要加大范围
+				end.lat += space;
+				end.lng += space;
+
+				var width = end.lat - start.lat;
+				var height = end.lng - start.lng;
+
+				console.log("宽度："+width+"，高度："+height);
+
+				var xLength = Math.ceil(width/space);
+				var yLength = Math.ceil(height/space);
+
+				console.log("绘制"+xLength*yLength+"个覆盖物！");
+
+				var drawArray = [];
+				var index = 0;
+
+				for(var i=0;i<xLength;i++) {
+					for (var j = 0; j < yLength; j++) {
+						var fLng = start.lng+j*space;
+						var fLat = start.lat+i*space;
+						index++;
+						drawArray.push({lng: fLng, lat: fLat, draw: false});
+					}
+				}
+
+				function randomsort(a, b) {
+					return Math.random()>.5 ? -1 : 1;
+					//用Math.random()函数生成0~1之间的随机数与0.5比较，返回-1或1
+				}
+
+				drawArray.sort(randomsort);
+
+				if("block"==drawType){
+					funs.drawBlock({
+						levelData: [{color: funs.blockStyle.color}],
+						map: map,
+						points: [],
+						plateOverlay: funs.plys,
+						blockOverlay: funs.blos,
+						drawArray: drawArray,
+						scale: scale,
+						blockSize: space,
+						drawOnceLength: funs.drawOnceLength,
+						overlayShow: true
+					})
+				}else if("marker"==drawType){
+					funs.drawMarker({
+						style: funs.markerStyle,
+						map: map,
+						plateOverlay: funs.plys,
+						markerOverlay: funs.mars,
+						drawArray: drawArray,
+						scale: scale
+					})
+				}
+			},
+			//绘制热力块
+			drawBlock: function(option){
+				var levelData = option.levelData;
+				var map = option.map;
+				var points = option.points;
+				var plateOverlay = option.plateOverlay;
+				var blockOverlays = option.blockOverlay;
+				var drawArray = option.drawArray;
+				var scale = option.scale;
+				var blockSize = option.blockSize;
+				var drawOnceLength = option.drawOnceLength;
+				var overlayShow = option.overlayShow;
+				var currDrawLength = 0;
+
+				var end = true;
+
+				$.each(drawArray, function(ind, point){
+					if(point.draw){
+
+						return true;
+					}
+
+					if(currDrawLength>drawOnceLength-1){
+						end = false;
+
+						return false;
+					}
+
+					currDrawLength++;
+					point.draw = true;
+
+					var fLng = point.lng;
+					var fLat = point.lat;
+
+					var ldPoint = new BMap.Point(fLng/scale, fLat/scale);
+					fLat += blockSize;
+					var rdPoint = new BMap.Point(fLng/scale, fLat/scale);
+					fLng += blockSize;
+					var ruPoint = new BMap.Point(fLng/scale, fLat/scale);
+					fLat -= blockSize;
+					var luPoint = new BMap.Point(fLng/scale, fLat/scale);
+
+					var fillColor = levelData[levelData.length-1].color;
+
+					// 百度地图的多边形对象
+					var block = new BMap.Polygon(
+						[luPoint, ldPoint, rdPoint, ruPoint, luPoint],
+						{
+							strokeWeight: 1,
+							strokeOpacity: 0.6111,
+							strokeColor: '#fff',
+							fillColor: fillColor,
+							fillOpacity: 0.6111,
+							enableClicking: false//禁用点击事件
+						}
+					);
+
+					var isInPlateOverlay = false;
+
+					$.each(plateOverlay, function(indr, polygon){
+						if(
+							BMapLib.GeoUtils.isPointInPolygon(ldPoint, polygon) ||
+							BMapLib.GeoUtils.isPointInPolygon(rdPoint, polygon) ||
+							BMapLib.GeoUtils.isPointInPolygon(ruPoint, polygon) ||
+							BMapLib.GeoUtils.isPointInPolygon(luPoint, polygon)
+						){
+							isInPlateOverlay = true;
+
+							return false;
+						}
+					})//end $.each
+
+					var cooInPolygonNums = 0;
+
+					if(isInPlateOverlay){
+						$.each(points, function(cooInd, cooPoint){
+							if(BMapLib.GeoUtils.isPointInRect(cooPoint, block.getBounds())){
+								cooInPolygonNums+=cooPoint.count;
+							}
+						})
+					}
+
+					$.each(levelData, function(indr, elem){
+						block.setFillColor(elem.color);
+						block.level = elem.level;
+
+						if(cooInPolygonNums>elem.numsRange){
+							return false;
+						}
+					})
+
+					if(!overlayShow){
+						block.hide();
+					}
+
+					map.addOverlay(block);
+					blockOverlays.push(block);
+				})
+
+				if(end){
+					//移除事件，防止遮挡板块点击事件
+					var paths = $(document).find("path");
+					$.each(paths, function(ind, elem){
+						var fillO = $(elem).attr("fill-opacity");
+						if(fillO==0.6111){
+							$(elem).css({pointerEvents: "none"});
+						}
+					})
+
+					console.log("绘制完成！");
+				}else{
+					funs.drawTimeout = setTimeout(function(){
+						funs.drawBlock(option);
+					}, 10)
+				}
+			},
+			//删除热力块
+			removeBlock: function(){
+				if(funs.drawTimeout){
+					clearTimeout(funs.drawTimeout);
+				}
+
+				if(funs.blos!=null&&funs.blos.length>0){
+					$.each(funs.blos, function(ind, blockOverlay){
+						blockOverlay.remove();
+					})
+				}
+
+				funs.blos = [];
+			},
+			//绘制标记
+			drawMarker: function(option){
+				var style = option.style;
+				var map = option.map;
+				var plateOverlay = option.plateOverlay;
+				var markerOverlay = option.markerOverlay;
+				var drawArray = option.drawArray;
+				var scale = option.scale;
+				var pointsStr = "";
+
+				var points = [];
+				var options = {
+					size: funs.markerStyle.size,
+					shape: BMAP_POINT_SHAPE_CIRCLE,
+					color: funs.markerStyle.color
+				}
+
+				$.each(drawArray, function(ind, point){
+					var fLng = point.lng;
+					var fLat = point.lat;
+
+					var ldPoint = new BMap.Point(fLng/scale, fLat/scale);
+
+					$.each(plateOverlay, function(indr, polygon){
+						if(
+							BMapLib.GeoUtils.isPointInPolygon(ldPoint, polygon)
+						){
+							points.push(ldPoint);
+							pointsStr += ldPoint.lng + "," + ldPoint.lat + ";"
+
+							return false;
+						}
+					})//end $.each
+				})
+
+				var pointCollection = new BMap.PointCollection(points, options);  // 初始化PointCollection
+
+				map.addOverlay(pointCollection);  // 添加Overlay
+
+				markerOverlay = pointCollection;
+
+				layer.open({
+					title: '标记'
+					,content: pointsStr
+					,area: ['500px', '300px']
+				});
+				console.log("绘制完成！");
+			},
+			//删除标记
+			removeMarker: function(){
+				if(funs.mars!=null){
+					funs.mas.remove();
+					funs.mas = null;
+				}
+			},
+			//从数据文件获取坐标点
+			getPointsFromFileData: function(dataText, ignoreRow){
+				var strs = dataText.split(/[\n]/);
+				var points = [];
+				try{
+					for(var i=ignoreRow;i<strs.length;i++){
+						var str = strs[i].trim();
+						if(str==""){
+							continue;
+						}
+
+						var data = str.split(",");
+						var count = data[0];
+						var lng = data[1];
+						var lat = data[2];
+
+						var point = {
+							lng: lng,
+							lat: lat,
+							count: count
+						};
+
+						points.push(point);
+					}
+
+					console.log(strs.length + " " + points.length);
+
+					return points;
+				}catch(e){
+					layer.msg("数据坐标获取失败！", {icon: 5, anim:6});
+
+					return null;
+				}
+			},
+			//绘制热力图
+			drawHeatOverlay: function(points){
+				if(funs.heatOva==null){
+					var overlay = new TDMap.HeatOverlay();
+					map.addOverlay(overlay);
+					overlay.setPoints(points);
+					overlay.setOptions({
+						maxValue: 5,
+						radius: 20,
+						maxOpacity: 0.5,
+						gradient: {
+							0.25: "rgb(0,0,255)",
+							0.55: "rgb(0,255,0)",
+							0.85: "yellow",
+							1.0: "rgb(255,0,0)"
+						}
+					});
+
+					funs.heatOva = overlay;
+					funs.zIndexReset();
+				}else{
+					funs.heatOva.setPoints(points);
+				}
+			},
+            drawPoints: function(data){
+			    if(funs.labels!=null){
+			        for(var i in funs.labels){
+			            map.removeOverlay(funs.labels[i]);
+					}
+				}
+				if(funs.markers!=null){
+                    for(var i in funs.markers){
+                        map.removeOverlay(funs.markers[i]);
+                    }
+				}
+
+				var markers = [];
+			    var labels = [];
+
+			    for(var i in data){
+			        var item = data[i];
+			        var point = new BMap.Point(item.lng, item.lat);
+			        var label = new BMap.Label(item.lng+","+item.lat, {offset: {width: -50, height: -50}, position: point});
+			        var marker = new BMap.Marker(point);
+			        labels.push(label);
+                    markers.push(marker);
+                    map.addOverlay(label);
+                    map.addOverlay(marker);
+				}
+
+				funs.labels = labels;
+			    funs.markers = markers;
+            },
+			//层次重置
+			zIndexReset: function(){
+				if($("#bmap").find('svg[type="system"]').length==0){
+					setTimeout(function(){
+						zIndexReset();
+					}, 100);
+					return;
+				}
+				$("#bmap").find('svg[type="system"]').parent().css({zIndex: 199});
+				$("#bmap").children(".ec-extension-bmap").children("div").eq(0).children("div").eq(1).children("div").eq(3).children("div").css({zIndex: 1});
+				if($("#bmap").children(".ec-extension-bmap").children("div").eq(0).children("div").eq(1).children("div").eq(3).children("canvas").length>1){
+					$("#bmap").children(".ec-extension-bmap").children("div").eq(0).children("div").eq(1).children("div").eq(3).children("canvas").eq(0).remove();
+				}
+			}
+		}
+	})
+
+</script>
+
+</body>
+</html>
